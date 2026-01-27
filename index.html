@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <h1>CSS Grid Learning</h1>
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">Gallery</a>
+            </div>
+        </nav>
+    </header>
+    
+    <aside>
+        <h1>Manu</h1>
+        <nav>
+
+            <a href="">Getting Started</a>
+            <a href="">Grid Basics</a>
+            <a href="">Grid Properties</a>
+            <a href="">Examples</a>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Contact Form with Pseudo Selectors</h1>
+        <h2>This form demonstrates various CSS pseudo selectors: :hover, :active, :focus, and :nth-child.</h2>
+
+        <form>
+            <div class="input-group">
+                <label for="name">Full name:</label>
+                <input class="input" name="name" id="name" type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address:</label>
+                <input class="input" name="email" id="email" type="email" placeholder="your,email@example.com">
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number:</label>
+                <input class="input" name="phone" id="phone" type="tel" placeholder="(123) 456-7890">
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject:</label>
+                <input class="input" name="subject" id="subject" type="text" placeholder="What is this about?">
+
+            </div>
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea class="input" name="message" id="message" rows="5" placeholder="Type your message here"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="priority">Priority Level:</label>
+                <select class="input" name="priority" id="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                    <option value="Urgent">Urgent</option>
+                </select>
+            </div>
+            <div class="input-group neria">
+                <div class="checkbox1">
+                    <input name="newsletter" id="newsletter" type="checkbox">
+                    <label> Subscribe to newsletter</label>
+                </div>
+
+                <div class="checkbox2">
+                    <input name="terms" id="terms" type="checkbox">
+                    <label> I agree to terms and conditions</label>
+                </div>
+            </div>
+        </form>
+
+        <section>
+            <h1>Pseudo Selectors Used:</h1>
+            <ul>
+                <li>:hover - Applied to buttons and inputs when you mouse over them</li>
+                <li>:focus - Applied to inputs when you click or tab into them</li>
+                <li>:active - Applied to buttons when you click and hold them</li>
+                <li>:disabled - Applied to the submit button to show it's disabled</li>
+                <li>:visited - Applied to navigation links you've already visited</li>
+                <li>:nth-child - Applied to style specific form groups differently</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2024 CSS Grid Exercise | Learning Resource for Students
+    </footer>
+</body>
+</html>
