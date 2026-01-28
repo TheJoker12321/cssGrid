@@ -1,0 +1,177 @@
+body {
+
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin-right: 15%;
+    margin-left: 15%;
+    
+}
+
+#navbar {
+
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 8px;
+}
+
+header {
+    margin: 0%;
+    height: 0.1rem;
+}
+
+.links a {
+
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links {
+
+    display: flex;
+    gap: 20px;
+}
+
+.links a:hover {
+
+ color: #3498db;
+
+}
+
+main {
+
+    margin-top: 8%;
+    height: 50%;
+}
+
+.title {
+
+    background-color: #ffffff;
+    padding-top:  1%;
+    padding-left: 1.5%;
+    padding-bottom: 1.5%;
+    border-radius: 8px;
+}
+
+.cubes {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+
+}
+
+.animation {
+
+    background-color: #ffffff;
+    height: 91%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+
+
+}
+
+#pulse {
+
+    background-color: #6f64c4;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 9rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.3rem;
+    animation: scale 1s  alternate infinite;
+}
+
+#bounce {
+
+    background-color: #f170a8;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 9rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.3rem;
+    animation: moveTop 1s ease-in-out alternate infinite;
+}
+
+#rotate {
+
+    background-color: #2ccbfe;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 9rem;
+    font-weight: bold;
+    color: white;
+    font-size: 1.3rem;
+    animation: rounding 1s linear infinite;
+}
+
+@keyframes scale {
+
+    0% {
+
+        transform: scale(1.2, 1.2);
+        opacity: 0.5;
+    }
+}
+
+@keyframes moveTop {
+
+    from {
+
+        transform: translateY(0vw);
+    }
+
+    to {
+
+        transform: translateY(-2vw);
+    }
+}
+
+@keyframes rounding {
+
+    0% {
+
+        transform: rotate(0deg);
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 7%;
+    margin-top: 1.8rem;
+    border-radius: 8px;
+}
